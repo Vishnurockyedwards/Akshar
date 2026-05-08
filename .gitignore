@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Pytest cache
+.pytest_cache/
+
+# Massive Datasets (GitHub blocks files larger than 100MB)
+data/massive_hindi.txt
+data/massive_hinglish.txt
+data/merged_corpus_temp.txt
+
+# Temporary scripts
+temp_fix.py
+test_script.py
+
+#download data
+download_data.py
+download_hindi.py
+
