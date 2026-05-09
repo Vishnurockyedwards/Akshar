@@ -56,7 +56,7 @@ from tokenizer.tokenizer import HinglishTokenizer
 tokenizer = HinglishTokenizer.load("models/hinglish_tokenizer.json")
 
 # Encode a custom sentence
-text = "Kal meeting hai bro 😂 मैं coding सीख रहा हूँ"
+text = "akshar makes content creation आसान and smart with multilingual text support. 🚀"
 encoded = tokenizer.encode(text)
 
 print("Tokens:", encoded["tokens"])
@@ -66,7 +66,12 @@ print("Token IDs:", encoded["ids"])
 decoded_text = tokenizer.decode(encoded["ids"])
 print("Decoded:", decoded_text)
 ```
-
+### result
+```
+Tokens: ['aksh', 'ar', ' makes', ' content', ' creation', ' आसान', ' and', ' smart', ' with', ' multi', 'lingual', ' text', ' supp', 'ort', '.', ' 🚀']
+Token IDs: [1462, 2011, 4142, 10100, 11893, 59202, 1466, 11121, 1843, 23813, 19022, 3526, 14781, 10341, 4, 117850]
+Decoded: akshar makes content creation आसान and smart with multilingual text support. 🚀
+```
 ## Notebooks
 
 We provide three Jupyter notebooks to explore the dataset and model:
